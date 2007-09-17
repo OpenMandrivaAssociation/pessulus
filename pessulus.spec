@@ -1,5 +1,5 @@
 %define name pessulus
-%define version 2.16.2
+%define version 2.16.3
 %define release %mkrel 1
 
 Summary: Desktop lockdown editor for GNOME
@@ -32,7 +32,7 @@ everyone, e.g. in an internet cafe.
 %setup -q
 
 %build
-%configure2_5x
+./configure --prefix=%_prefix
 %make
 
 %install
