@@ -43,17 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 mv %buildroot%_libdir %buildroot%_prefix/lib
 %endif
 %find_lang %name
-install -d -m 755 $RPM_BUILD_ROOT%{_menudir}
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name} <<EOF
-?package(%{name}): \
-	command="%{_bindir}/%name" \
-	needs="gnome" \
-	section="System/Configuration/GNOME/Advanced" \
-	title="Lockdown Editor" \
-	startup_notify="true" \
-	icon="stock_lock" \
-	longtitle="Configure the lockdown policy" xdg="true"
-EOF
 desktop-file-install --vendor="" \
   --remove-category="Application" \
   --add-category="X-MandrivaLinux-System-Configuration-GNOME-Advanced" \
@@ -75,6 +64,5 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/%name/
 %_datadir/applications/%name.desktop
 %py_puresitedir/Pessulus/
-%_menudir/%name
 
 
