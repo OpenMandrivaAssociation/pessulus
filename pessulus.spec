@@ -1,11 +1,10 @@
 %define name pessulus
 %define version 2.16.3
-%define release %mkrel 1
 
 Summary: Desktop lockdown editor for GNOME
 Name: %{name}
 Version: %{version}
-Release: %{release}
+Release: %mkrel 2
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 License: GPL
 Group: Graphical desktop/GNOME
