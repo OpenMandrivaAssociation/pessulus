@@ -12,8 +12,9 @@ Url: http://www.gnome.org/~vuntz/pessulus/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 BuildRequires: python-devel
-BuildRequires: pygtk2.0-devel 
-BuildRequires: gnome-python
+BuildRequires: pygtk2.0-devel >= 2.6.0
+BuildRequires: gnome-python >= 2.6.0
+BuildRequires: gnome-python-devel >= 2.6.0
 BuildRequires: perl-XML-Parser
 BuildRequires: desktop-file-utils
 Requires: gnome-python gnome-python-gconf pygtk2.0-libglade
