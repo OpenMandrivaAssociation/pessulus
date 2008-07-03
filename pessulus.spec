@@ -1,12 +1,12 @@
 %define name pessulus
-%define version 2.16.4
+%define version 2.23.1
 
 Summary: Desktop lockdown editor for GNOME
 Name: %{name}
 Version: %{version}
 Release: %mkrel 1
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
-License: GPL
+License: GPLv2+
 Group: Graphical desktop/GNOME
 Url: http://www.gnome.org/~vuntz/pessulus/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -15,7 +15,7 @@ BuildRequires: python-devel
 BuildRequires: pygtk2.0-devel >= 2.6.0
 BuildRequires: gnome-python >= 2.6.0
 BuildRequires: gnome-python-devel >= 2.6.0
-BuildRequires: perl-XML-Parser
+BuildRequires: intltool
 BuildRequires: desktop-file-utils
 Requires: gnome-python gnome-python-gconf pygtk2.0-libglade
 
@@ -65,6 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog HACKING NEWS MAINTAINERS README TODO
 %_bindir/%name
+%_iconsdir/hicolor/*/apps/*
 %_datadir/%name/
 %_datadir/applications/%name.desktop
 %py_puresitedir/Pessulus/
