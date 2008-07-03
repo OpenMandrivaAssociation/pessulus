@@ -15,9 +15,12 @@ BuildRequires: python-devel
 BuildRequires: pygtk2.0-devel >= 2.6.0
 BuildRequires: gnome-python >= 2.6.0
 BuildRequires: gnome-python-devel >= 2.6.0
+BuildRequires: gnome-python-desktop
 BuildRequires: intltool
 BuildRequires: desktop-file-utils
 Requires: gnome-python gnome-python-gconf pygtk2.0-libglade
+#gw for bugbuddy
+Requires: gnome-python-desktop
 
 %description 
 pessulus is a lockdown editor for GNOME, written in python.  pessulus
