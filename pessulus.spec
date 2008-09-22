@@ -41,10 +41,6 @@ everyone, e.g. in an internet cafe.
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
-#gw wrong python dir
-%if %_lib != lib
-mv %buildroot%_libdir %buildroot%_prefix/lib
-%endif
 %find_lang %name
 desktop-file-install --vendor="" \
   --remove-category="Application" \
