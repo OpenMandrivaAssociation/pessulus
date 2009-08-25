@@ -1,5 +1,5 @@
 %define name pessulus
-%define version 2.27.5
+%define version 2.27.91
 
 Summary: Desktop lockdown editor for GNOME
 Name: %{name}
