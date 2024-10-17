@@ -6,7 +6,7 @@ Version:	2.30.4
 Release:	9
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
-Url:		http://www.gnome.org/~vuntz/pessulus/
+Url:		https://www.gnome.org/~vuntz/pessulus/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/pessulus/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	desktop-file-utils
