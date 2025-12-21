@@ -9,6 +9,11 @@ Group:		Graphical desktop/GNOME
 Url:		https://www.gnome.org/~vuntz/pessulus/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/pessulus/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildArch:	noarch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	desktop-file-utils
 BuildRequires:	gnome-python-desktop
 BuildRequires:	intltool
